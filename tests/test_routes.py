@@ -88,7 +88,7 @@ class TestAccountService(TestCase):
         self.assertEqual(resp.status_code, 200)
         data = resp.get_json()
         self.assertEqual(data["status"], "OK")
-
+        
     def test_create_account(self):
         """It should Create a new Account"""
         account = AccountFactory()
